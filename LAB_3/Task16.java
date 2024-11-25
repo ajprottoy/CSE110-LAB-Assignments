@@ -1,6 +1,6 @@
 package LAB_3;
 
-public class Task16{#
+public class Task16{
   // Tracing Problem 01
     public static void main(String args[]){
       int x = 0, p = 0, sum = 0;
