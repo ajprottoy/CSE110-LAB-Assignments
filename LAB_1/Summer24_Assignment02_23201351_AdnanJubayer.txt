@@ -1,0 +1,266 @@
+// Task 1
+        int hungry;       // Legal identifier
+        int 2AB;       // Error; Identifiers cannot start with a digit.
+        int 312.2;  // Error; Identifiers cannot contain a decimal point and cannot start with a digit.
+        int MOBILE;       // Legal identifier
+        int “Ans”;     // Error; Identifiers cannot contain double quotes.
+        int $30;       // Error; The '$' symbol is allowed in Java identifiers,but starting an identifier with a digit is not allowed.
+        int Yes/No;  // Error; Identifiers cannot contain the slash (/) character.
+        int student-id; // Error;  Identifiers cannot contain special characters like '-'.
+        int A+3;       // Error;  Identifiers cannot contain special characters like '+'.
+        int ‘X’;    // Error;  Identifiers cannot contain single quotes.
+        int return;    // Error; 'return' is a reserved keyword in Java and cannot be used as an identifier. 
+    
+//Task 2
+public class Task 2 {
+  public static void main(String[] args) {
+    // Task 2.1
+    int x = 10
+    System.out.println("The 1st number is: " + x); 
+    // Task 2.2
+    int x = 10
+    System.out.println("The 1st number is: " + x); 
+    int y = 5;
+    System.out.println("The 2nd number is: " + y); 
+    int sum = x + y;
+    System.out.println("The sum 1st and 2nd number is: " + sum); 
+    // Task 2.3
+     int x = 10
+    System.out.println("The 1st number is: " + x); 
+    int y = 5;
+    System.out.println("The 2nd number is: " + y);
+    int product = x * y;
+    System.out.println("The product of x and y is: " + product);
+    int division = x / y;
+    System.out.println("The division of x by y is: " + division); //T3
+    // Task 2.4
+    double a = 42.5;
+    System.out.println("The value of a is: " + a);
+    double b = 58.3;
+    System.out.println("The value of b is: " + b);
+    double sum = a + b;
+    System.out.println("The sum of a and b is: " + sum);
+    double product = a * b;
+    System.out.println("The product of a and b is: " + product);
+    double division = a / b;
+    System.out.println("The division of a by b is: " + division);
+    // Task 2.5
+    double M = 42.5;
+    System.out.println("The value of M is: " + M);
+    int N = 58;
+    System.out.println("The value of N is: " + N);
+    double sum = M + N;
+    System.out.println("The sum of M and N is: " + sum);
+    double product = M * N;
+    System.out.println("The product of M and N is: " + product);
+    double division = M / N;
+    System.out.println("The division of M by N is: " + division);
+    // Task 2.6
+    String strOne = "Morning";
+    System.out.println("The value of strOne is: " + strOne);
+    String strTwo = "BRACU";
+    System.out.println("The value of strTwo is: " + strTwo);
+    String concatenatedString = strOne + " " + strTwo;
+    System.out.println("The concatenation of strOne and strTwo is: " + concatenatedString);
+    // String and Integer concetanation
+    int num = 42;
+    String result1 = strOne + num;
+    String result2 = num + strOne;
+    System.out.println("Concatenation of String and Integer (String first): " + result1);
+    System.out.println("Concatenation of Integer and String (Integer first): " + result2);
+  }
+}
+
+
+// Task 3
+public class Task2 {
+   public static void main(String[] args) {
+   double r = 4.0;
+   double circumference = 2 * 3.1416 * r;
+   double area = 3.1416 * r * r;
+   System.out.println("Circumference: " + circumference + " units");
+   System.out.println("Area: " + area + " square units");
+  }
+}
+ 
+
+// Task 4
+import java.util.Scanner;
+public class Task4 {
+  public static void main(String[] args) {
+     Scanner scanner = new Scanner(System.in);
+     System.out.print("Enter the number: ");
+     int num = scanner.nextInt();
+     int lastTwo = num % 100;
+     System.out.println("The last two digits are: " + lastTwo);
+  }
+}
+  
+
+// Task 5
+public class Task5 {
+    public static void main(String[] args) {
+        double inches = 500.0;
+        double cIm = 0.0254;
+        double meters = inches * cIm;
+        System.out.println(inches + " inches is " + meters + " meters");
+    }
+}
+
+
+// Task 6 By using third variable
+public class Task6 {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 10;
+        System.out.println("Before swapping:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        int temp = a;
+        a = b;
+        b = temp;
+        System.out.println("After swapping (using third variable) :");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+    }
+}
+
+//Task 6 Without using any other variables
+ public class Task6 {
+   public static void main(String[] args) {        
+        int a = 5;
+        int b = 10;
+        System.out.println("Before swapping:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        System.out.println("After swapping (without using third variable) :");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+     }
+   }
+
+
+// Task 7
+public class Task7 {
+    public static void main(String[] args) {
+        int minutes = 3456789;
+        int mIh = 60;
+        int hId = 24;
+        int dIy = 365;
+        int hours = minutes / mIh;
+        int days = hours / hId;
+        int years = days / dIy;
+        days = days % dIy;
+        System.out.println(minutes + " minutes is approximately " + years + " years and " + days + " days");
+    }
+}
+
+
+// Task 8
+public class Task8 {
+    public static void main(String[] args) {
+        int a = 2;
+        int b = 5;
+        int c = 8;
+        int d = (2 * b * ((c - a) / 3)) + 7;
+        System.out.println("The value of d is: " + d);
+    }
+}
+
+
+// Task 9
+public class Task9 {
+    public static void main(String[] args) {
+        int n = 5;
+        System.out.println(n + " x 1 = " + (n * 1));
+        System.out.println(n + " x 2 = " + (n * 2));
+        System.out.println(n + " x 3 = " + (n * 3));
+        System.out.println(n + " x 4 = " + (n * 4));
+        System.out.println(n + " x 5 = " + (n * 5));
+        System.out.println(n + " x 6 = " + (n * 6));
+        System.out.println(n + " x 7 = " + (n * 7));
+        System.out.println(n + " x 8 = " + (n * 8));
+        System.out.println(n + " x 9 = " + (n * 9));
+        System.out.println(n + " x 10 = " + (n * 10));
+    }
+}
+
+
+// Task 10
+public class Task10 {
+    public static void main(String[] args) {
+        int n = 100;
+        int a = 1;
+        int L = 100;
+        int sum = (n / 2) * (a + L);
+        System.out.println("The sum of the first 100 positive numbers is: " + sum);
+    }
+}
+
+
+// Task 11
+public class Task11 {
+    public static void main(String[] args) {
+        double a = 4.5;
+        double b = 9.5;
+        double c = (a * a + b * b)**(0.5);
+        double sinA = a / c;
+        double cosA = b / c;
+        double sinB = b / c;
+        double cosB = a / c;
+        System.out.println("For the given triangle :");
+        System.out.println("a = " + a + ", b = " + b + ", c = " + c);
+        System.out.println("Sin(A) = " + sinA);
+        System.out.println("Cos(A) = " + cosA);
+        System.out.println("Sin(B) = " + sinB);
+        System.out.println("Cos(B) = " + cosB);
+    }
+}
+
+
+// Task 12
+public class Task12 {
+    public static void main(String[] args) {
+        int studentID = 23201351;
+        int lastTwoDigits = studentID % 100;
+        int lastDigit = lastTwoDigits % 10;
+        int secondLastDigit = lastTwoDigits / 10;
+        System.out.println(lastDigit);
+        System.out.println(secondLastDigit);
+    }
+}
+
+
+// Task 13
+public class Task13 {
+    public static void main(String[] args) {
+        int distanceInMeters = 2351;
+        int hours = 5;
+        int minutes = 56;
+        int seconds = 23;
+        double totalHours = hours + (minutes / 60.0) + (seconds / 3600.0);
+        double distanceInKm = distanceInMeters / 1000.0;
+        double distanceInMiles = distanceInMeters / 1609.0;
+        double vKmPerHour = distanceInKm / totalHours;
+        double vMilesPerHour = distanceInMiles / totalHours;
+        System.out.println("Your velocity in km/h is " + vKmPerHour);
+        System.out.println("Your velocity in miles/h is " + vMilesPerHour);
+    }
+}
+
+
+// Task 14
+public class Task14 {
+    public static void main(String[] args) {
+        double a = 8;
+        double b = 3;
+        double s = (b*b + ((a/2)*(a/2)))**(0.5);
+        double circumference = 6 * s;
+        double area = (3 * (3**(0.5)) / 2) * (s * s);
+        System.out.println("Circumference: " + circumference);
+        System.out.println("Area: " + area);
+    }
+}
